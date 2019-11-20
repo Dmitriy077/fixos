@@ -170,3 +170,49 @@ textarea {
 .header_nav_search {
 	margin-top: 11px;
 }
+.main_slider_wrap {
+	/*height: 540px;*/
+}
+.main_slider_background {
+	background: radial-gradient(100.85% 889.43% at 99.53% 99.07%, #004D94 1.64%, rgba(0, 0, 0, 0.78) 100%);
+	opacity: 0.5;
+	height: 540px;
+}
+.main_slider_background_img {
+	height: 540px;
+	background: url(img/main/Rectangle7.jpg) no-repeat;
+	background-size: cover;
+}
+.main_slider_wrap {
+	position: relative;
+	overflow: hidden;
+}
+.main_slider_img1 {
+	position: absolute;
+	left: 7px;
+	bottom: -6px;
+}
+.main_slider_img2 {
+	position: absolute;
+	right: 4px;
+}
+.main_slider_img3 {
+	position: absolute;
+	left: 55px;
+	bottom: 270px;
+	width: 140px;
+	height: 140px;
+	border-radius: 500px;
+	opacity: 0.8;
+	box-shadow: 0px 0px 0px 94px #E30235;
+}
+.main_slider_img4 {
+	position: absolute;
+	right: -18px;
+	bottom: -12px;
+	width: 70px;
+	height: 70px;
+	border-radius: 500px;
+	opacity: 0.8;
+	box-shadow: 0px 0px 0px 49px #E30235;
+}
