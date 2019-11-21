@@ -71,6 +71,9 @@ textarea {
 	font-size: 20px;
 	color: #C8C8C8;
 }
+.header_contacts_right_social i:hover {
+	color: #1A1A18;
+}
 .header_contacts_right_social li {
 	padding: 24px 26px;
 	width: 70px;
@@ -170,31 +173,37 @@ textarea {
 .header_nav_search {
 	margin-top: 11px;
 }
-.main_slider_wrap {
-	/*height: 540px;*/
-}
 .main_slider_background {
 	background: radial-gradient(100.85% 889.43% at 99.53% 99.07%, #004D94 1.64%, rgba(0, 0, 0, 0.78) 100%);
 	opacity: 0.5;
-	height: 540px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
 }
-.main_slider_background_img {
+.main_slider_background_img1 {
 	height: 540px;
-	background: url(img/main/Rectangle7.jpg) no-repeat;
+	width: 100%;
+	background: url(./img/main/banner1.jpg) no-repeat;
 	background-size: cover;
-}
-.main_slider_wrap {
 	position: relative;
+}
+.main_slider_slick_wrap {
+	height: 540px;
+}
+.main_slider_slick_wrap {
 	overflow: hidden;
 }
 .main_slider_img1 {
 	position: absolute;
 	left: 7px;
 	bottom: -6px;
+	z-index: 2;
 }
 .main_slider_img2 {
 	position: absolute;
 	right: 4px;
+	z-index: 2;
 }
 .main_slider_img3 {
 	position: absolute;
@@ -205,6 +214,7 @@ textarea {
 	border-radius: 500px;
 	opacity: 0.8;
 	box-shadow: 0px 0px 0px 94px #E30235;
+	z-index: 2;
 }
 .main_slider_img4 {
 	position: absolute;
@@ -215,4 +225,57 @@ textarea {
 	border-radius: 500px;
 	opacity: 0.8;
 	box-shadow: 0px 0px 0px 49px #E30235;
+	z-index: 2;
 }
+.main_slider_content {
+	z-index: 3;
+	position: relative;
+}
+.main_slider_caption {
+	padding-top: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+	height: 224px;
+	display: flex;
+	flex-direction: column;
+}
+.main_slider_caption h1 {
+	font-family: 'Open Sans Bold';
+	width: 1009px;
+	font-size: 38px;
+	line-height: 54px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.main_slider_text {
+	width: 576px;
+	height: 166px;
+	font-size: 18px;
+	line-height: 27px;
+	color: #FFFFFF;	
+}
+.button {
+	font-family: 'Open Sans Bold';
+	font-size: 16px;
+	color: white;
+	box-sizing: border-box;
+	background: linear-gradient(100.91deg, #E40134 4.66%, #FF1B5F 96.99%);
+	padding: 20px 26px 20px 34px;
+	border-radius: 200px;
+	cursor: pointer;
+	display: flex;
+}
+.main_slider_button {
+	width: 245px;
+	margin-top: 10px;
+}
+.button img {
+	margin-left: 5px;
+	position: relative;
+	top: 5px;
+}
+/*.slick-dots {
+	position: absolute;
+}*/
