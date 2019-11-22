@@ -262,7 +262,7 @@ textarea {
 	color: white;
 	box-sizing: border-box;
 	background: linear-gradient(100.91deg, #E40134 4.66%, #FF1B5F 96.99%);
-	padding: 20px 26px 20px 34px;
+	padding: 20px 0px 20px 34px;
 	border-radius: 200px;
 	cursor: pointer;
 	display: flex;
@@ -276,6 +276,234 @@ textarea {
 	position: relative;
 	top: 5px;
 }
-/*.slick-dots {
+.slick-dots {
 	position: absolute;
-}*/
+	right: 6%;
+	top: 39%;
+}
+.slick-dots button {
+	color: transparent;
+	background-color: white;
+	opacity: 0.5;
+	width: 7px;
+	height: 7px;
+	border-radius: 50px;
+	margin-bottom: 22px;
+	cursor: pointer;
+}
+.slick-active button {
+	background-color: #E30235;
+	width: 9px;
+	height: 9px;
+	box-shadow: 0 0 0 2px white;
+	opacity: 1;
+}
+.main_slider_arrow {
+	position: absolute;
+	display: flex;
+	bottom: 32%;
+	right: 6%;
+	z-index: 2;
+}
+.main_slider_arrow_prev {
+	margin-right: 78px;
+	cursor: pointer;
+}
+.main_slider_arrow_next {
+	cursor: pointer;
+}
+.caption h1 {
+	font-family: 'Open Sans Bold';
+	font-size: 38px;
+	line-height: 46px;
+	color: #1A1A18;
+}
+.main_catalog {
+	display: flex;
+	margin-top: 42px;
+}
+.main_catalog_block:last-child {
+	margin-right: 0;
+}
+.flex_c {
+	flex: 1;
+}
+.catalog_block1 {
+	background: url(./img/main/catalog1.jpg) no-repeat;
+	background-size: cover;
+}
+.catalog_block2 {
+	background: url(./img/main/catalog2.jpg) no-repeat;
+	background-size: cover;
+}
+.catalog_block3 {
+	background: url(./img/main/catalog3.jpg) no-repeat;
+	background-size: cover;
+}
+.main_catalog_wrap {
+	margin-top: 92px;
+}
+.main_catalog_block {
+	margin-right: 30px;
+	height: 450px;
+	display: flex;
+	box-sizing: border-box;
+}
+.main_catalog_block_content {
+	color: white;
+	text-align: center;
+	margin: auto;
+}
+.block_content_caption {
+	font-size: 30px;
+	line-height: 46px;
+	width: 353px;
+	min-height: 100px;
+}
+.block_content_group {
+	font-size: 18px;
+	line-height: 27px;
+	opacity: 0.7;
+	display: flex;
+	justify-content: center;
+	min-height: 90px
+}
+.block_content_color {
+	font-size: 22px;
+	line-height: 35px;
+}
+.block_content_button {
+	width: 241px;
+	margin: 0 auto;
+	display: none;
+}
+.main_catalog_block:hover .block_content_color {
+	min-height: 91px;
+}
+.main_catalog_block:hover .block_content_button {
+	display: flex;
+}
+
+.universal_wrap {
+	margin-top: 92px;
+}
+.universal {
+	display: flex;
+}
+.universal_block {
+	margin-right: 30px;
+}
+.universal_block:last-child {
+	margin-right: 0;
+}
+.text {
+	margin-top: 43px;
+	font-size: 22px;
+	line-height: 35px;
+	color: #4F4F4F;
+}
+.universal_block_caption_text p {
+	margin-top: 10px;
+	
+}
+.article {
+	padding: 30px;
+	box-sizing: border-box;
+	border: 2px solid #F0F1F4;
+	height: 592px;
+	width: 330px;
+	position: relative;
+	background-color: white;
+}
+.article_img {
+	height: 270px;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+.article_img img {
+	width: 100%;
+	height: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.article_caption {
+	height: 108px;
+	display: flex;
+	overflow: hidden;
+}
+.article_caption h1 {
+	font-family: 'Open Sans Regular';
+	font-size: 22px;
+	line-height: 35px;
+	color: #1A1A18;	
+	margin: auto 0;
+}
+.article_description {
+	overflow: hidden;
+	height: 120px;
+}
+.article_description p {
+	font-size: 18px;
+	line-height: 24px;
+	color: #4F4F4F;	
+}
+.article_cost {
+	font-size: 22px;
+	line-height: 40px;
+	color: #1A1A18;	
+}
+.article_button {
+	width: 132px;
+	height: 54px;
+	padding-top: 15px;
+	padding-left: 29px;
+	margin-top: -2px;
+}
+.article:hover {
+	box-shadow: -2px 8px 20px rgba(0, 0, 0, 0.1);
+	border-bottom: none;
+}
+.article_button_wrap {
+	display: none;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 0 30px 30px;
+	height: 79px;
+	position: absolute;
+	left: 0;
+	bottom: -78px;
+	background-color: white;
+	box-shadow: -2px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.article_vector {
+	display: none;
+	position: absolute;
+	bottom: -34px;
+	right: 20px;
+}
+.article:hover .article_vector {
+	display: block;
+}
+.article:hover .article_button_wrap {
+	display: block;
+}
+.service_wrap {
+	margin-top: 170px;
+	margin-bottom: 86px;
+}
+.service_show {
+	margin-top: 12px;
+	font-size: 22px;
+	line-height: 27px;
+	text-decoration-line: underline;
+	color: #1A1A18;
+	cursor: pointer;
+}
+.service_show i {
+	color:#E30235;
+	font-size: 24px;
+	position: relative;
+	top: 2px;
+	left: 2px;
