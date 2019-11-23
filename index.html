@@ -345,42 +345,208 @@
 			<div class="calculator_wrap">
 				<div class="calculator">
 					<div class="calculator_block">
-						<div class="calculator_block_content">
-							<div class="caption">
-								<h1>Бесплатный расчет</h1>
-							</div>
-							<div class="text">
-								<p>Подбор и расчет количества крепежа. Для этого укажите необходимые параметры вашего фасада/террасы</p>
-								<p>Площадь террасы/фасада</p>
-							</div>
-							<div class="calculator_slider">
-								<div class="calculator_slider_content_wrap">
-									<span>m<sup>2</sup>	</span>
-									<span class="calculator_slider_content"></span>
+						<div class="main_slider_img4"></div>
+						<div class="main_slider_img3"></div>
+						<form action="#">
+							<div class="calculator_block_content">
+								<div class="caption">
+									<h1>Бесплатный расчет</h1>
+								</div>
+								<div class="text">
+									<p>Подбор и расчет количества крепежа. Для этого укажите необходимые параметры вашего фасада/террасы</p>
+									<p>Площадь террасы/фасада</p>
+								</div>
+								<div class="calculator_slider">
+									<div class="calculator_slider_content_wrap">
+										<span>m<sup>2</sup>	</span>
+										<input id="slider_value" class="calculator_slider_content" type="number" disabled placeholder="0">
+									</div>
+								</div>
+								<div class="calculator_options_wrap">
+									<div class="calculator_options">
+										<span>Ширина доски</span>
+										<input type="number" placeholder="0">
+										<p>MM</p>
+									</div>
+									<div class="calculator_options">
+										<span>Какой дилатационный зазор вы будете делать?<i class="fa fa-question-circle" aria-hidden="true"></i></span>
+										<input type="number" placeholder="0">
+										<p>MM</p>
+									</div>
+									<div class="calculator_options">
+										<span>Шаг лаг (направляющих) на террасе/фасаде</span>
+										<input type="number" placeholder="0">
+										<p>M</p>
+									</div>
+								</div>
+								<div class="calculator_button_wrap">
+									<div class="calculator_parametr">
+										<span>Укажите параметры, заполнив все поля</span>
+									</div>
+									<div class="calculator_reset">
+										<input type="button" onclick="reset()" value="Сбросить">
+									</div>
+									<div class="calculator_button">
+										<input class="button" type="button" value="Рассчитать">
+									</div>
 								</div>
 							</div>
-							<div class="calculator_options_wrap">
-								<div class="calculator_options">
-									<span>Ширина доски</span>
-									<input type="number" placeholder="0">
-									<p>MM</p>
+						</form>
+					</div>
+					<div class="calculator_img">
+						<div class="results_counting_wrap">
+							<div class="results_counting">
+								<div class="results_counting_quantity">
+									<div>Результат подсчета</div>
+									<div>Количество крепежа </div>
+									<div>
+										<span>3 873</span>
+										<span>шт</span>
+									</div>
 								</div>
-								<div class="calculator_options">
-									<span>Какой дилатационный зазор вы будете делать?<i class="fa fa-question-circle" aria-hidden="true"></i></span>
-									<input type="number" placeholder="0">
-									<p>MM</p>
+								<div class="results_counting_type">
+									<div>
+										<img src="img/main/results.png" alt="">
+									</div>
+									<div>Модель крепежа</div>
+									<div><a href="#">OSFIX Кляймер для вагонки увеличенный</a></div>
 								</div>
-								<div class="calculator_options">
-									<span>Шаг лаг (направляющих) на террасе/фасаде</span>
-									<input type="number" placeholder="0">
-									<p>M</p>
-								</div>
-								
 							</div>
 						</div>
 					</div>
-					<div class="calculator_img">
-						
+				</div>
+			</div>
+			<div class="about_wrap">
+				<div class="about">
+					<div class="flex_c">
+						<div class="about_content">
+							<div class="caption">
+								<h1>О компании </h1>
+							</div>
+							<div class="text">
+								<p>
+								Компания OSFIX® – разработка, производство и внедрение систем креплений для различных отделочных материалов, используемых в многоэтажном строительстве, жилых, коммерческих и производственных зданиях, загородном домостроении и малых архитектурных формах.	
+								</p>
+							</div>
+							<a href="#">
+								<div class="about_button button">
+									<span>Узнать подробнее</span>
+									<span><img src="img/main/button_right.svg" alt=""></span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="flex_c">
+						<div class="about_circle"></div>
+					</div>
+				</div>
+			</div>
+			<div class="mainMap_wrap">
+				<div class="caption">
+					<h1>Как нас найти</h1>
+				</div>
+				<div id="mainMap" class="mainMap"></div>
+			</div>
+			<div class="select_wrap">
+				<div class="caption">
+					<h1>Подберем и рассчитаем БЕСПЛАТНО</h1>
+				</div>
+				<div class="select">
+					<div class="text">
+						<p>Подбор крепежа для монтажа деревянных досок или древесно-полимерного композита, отделочных и строительных работ — ответственная задача, от которой зависит долговечность и прочность конструкций.</p>
+					</div>
+					<div class="select_form">
+						<form action="#">
+							<input type="text" id="phone_main" placeholder="Ваш телефон" required>
+							<input type="text" placeholder="Ваше имя" required>
+							<input type="checkbox" id="select_checkbox" checked required>
+							<label for="select_checkbox">
+								<div class="select_checkbox_wrap">
+									<span class="select_checkbox"><i class="fa fa-check" aria-hidden="true"></i></span>
+									<span>Согласен на <u>обработку персональных данных</u></span>
+								</div>
+							</label>
+							<input type="button" class="button" value="Отправить" required>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="fooret_wrap">
+			<div class="main_slider_img3"></div>
+			<div class="footer container">
+				<div class="footer_content">
+					<div class="footer_content_block">
+						<div class="footer_logo">
+							<a href="#">
+								<img src="img/header/logo.svg" alt="">
+							</a>
+						</div>
+						<div class="footer_text">
+							<p>Разработчик и производитель профессиональных систем крепления и крепёжных изделий</p>
+						</div>
+					</div>
+					<div class="footer_content_block">
+						<a href="#">Каталог</a>
+						<a href="#">Продукция для деревянных досок</a>
+						<a href="#">Продукция для ДПК досок</a>
+						<a href="#">Продукция для подконструкций</a>
+						<a href="#">Универсальная продукция</a>
+					</div>
+					<div class="footer_content_block">
+						<a href="#">Информация</a>
+						<a href="#">Политика конфиденциальности</a>
+						<a href="#">О компании</a>
+						<a href="#">Подбор и расчет</a>
+						<a href="#">Доставка и оплата</a>
+						<a href="#">FAQ</a>
+					</div>
+					<div class="footer_content_block">
+						<a href="#">Контакты</a>
+						<div class="footer_phone">
+							<div class="footer_phone_img">
+								<img src="img/header/phone.png" alt="">
+							</div>
+							<div>
+								<p>+7 812 449-10-09</p>
+								<p><a href="#">Обратный звонок</a></p>
+							</div>
+						</div>
+						<div class="footer_mail">
+							<div class="footer_mail_img">
+								<img src="img/header/mail.svg" alt="">
+							</div>
+							<p><a href="#">info@osfix.ru</a></p>
+						</div>
+						<div class="footer_adress">
+							<div class="footer_adress_img">
+								<img src="img/header/pin.svg" alt="">
+							</div>
+							<p>191040, Санкт-Петербург, Лиговский пр., 52</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer_copyright">
+					<div class="footer_copyright_content">
+						<div><p>© 2009-2018, Osfix</p></div>
+						<div>
+							<div class="development">
+								<p>Разработка &mdash;</p>
+								<div class="development_img">
+									<img src="img/header/dev.svg" alt="">
+								</div>
+							</div>
+							<div class="social header_contacts_right_social">
+								<ul>
+									<li>
+										<span>Мы в социальных сетях:</span>
+									</li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -389,8 +555,10 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="./plugins/mask/jquery.maskedinput.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=db8b2430-7e55-4a5f-a85b-48640136da70&lang=ru_RU" type="text/javascript"></script>
 	<script type="text/javascript" src="./plugins/slick/slick.min.js"></script>
 	<script type="text/javascript" src="./plugins/ui/jquery-ui.js"></script>
+	<script src="js/mainMap.js"></script>
 	<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

@@ -14,6 +14,12 @@ $(function() {
 	});
 
 
+// Маска для телефона
+
+
+$("#phone_main").mask("+7 (999) 999-9999");
+
+
 
 
 // Ползунок
@@ -26,14 +32,30 @@ $(function() {
 		step : 1,//Шаг, с которым будет двигаться ползунок
 		create: function( event, ui ) {
 			val = $( ".calculator_slider" ).slider("value");//При создании слайдера, получаем его значение в перемен. val
-			$( ".calculator_slider_content" ).html( val );//Заполняем этим значением элемент с id contentSlider
+			$( "#slider_value" ).val( val );//Заполняем этим значением элемент с id contentSlider
 			// $( ".calculator_slider" ).css('left', val/10 + '%');
 		},
     	slide: function( event, ui ) {
-			$( ".calculator_slider_content" ).html( ui.value );//При изменении значения ползунка заполняем элемент с id contentSlider
+			$( "#slider_value" ).val( ui.value );//При изменении значения ползунка заполняем элемент с id contentSlider
 			// $( ".calculator_slider" ).css('left', ui.value/10 + '%');
 
         }
     });
 
 });
+
+
+$('.calculator_reset input').on('click', function() {
+	$(".calculator_slider").slider("value", 0);
+});
+
+$("#slider_value").change(function(){
+	var value = $("#slider_value").val();
+	if (value == undefined) {
+		value = 0;
+	};
+
+	$(".calculator_slider").slider("value", value);
+
+});
+
