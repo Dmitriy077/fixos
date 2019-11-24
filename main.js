@@ -88,3 +88,21 @@ $('.mediaEsc_img').on('click', function() {
     	$('.header_nav_media').hide();
 
 });
+
+
+
+// Медиа футер
+
+$('.footer_content_block li:first-child').on('click', function() {
+	if ($(this).siblings('li').is(':hidden')) {
+		$(this).siblings('li').show();
+		$(this).css('border-bottom', 'none');
+	} else {
+		$(this).siblings('li').hide();
+		$(this).css('border-bottom', '1px solid #00000024');
+	}
+
+	
+
+
+});
