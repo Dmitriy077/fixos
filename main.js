@@ -59,3 +59,20 @@ $("#slider_value").change(function(){
 
 });
 
+
+
+// Медиа хэдер
+
+$('.media_img').on('click', function() {
+
+	if ($('.header_nav_right').is(':hidden')) {
+    	$('.header_nav_right').css('display', 'flex');
+    	$('.header_nav_left').css('width', 'auto');
+    	$('.nav').hide();
+	} else { 	
+		$('.header_nav_right').hide();
+		$('.header_nav_left').css('width', '100%');
+    	$('.nav').show();
+    }
+
+});
