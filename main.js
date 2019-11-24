@@ -63,7 +63,7 @@ $("#slider_value").change(function(){
 
 // Медиа хэдер
 
-$('.media_img').on('click', function() {
+$('.media1024_img').on('click', function() {
 
 	if ($('.header_nav_right').is(':hidden')) {
     	$('.header_nav_right').css('display', 'flex');
@@ -74,5 +74,17 @@ $('.media_img').on('click', function() {
 		$('.header_nav_left').css('width', '100%');
     	$('.nav').show();
     }
+
+});
+$('.media360_img').on('click', function() {
+
+    	$('.header_nav').hide();
+    	$('.header_nav_media').show();
+
+});
+$('.mediaEsc_img').on('click', function() {
+
+    	$('.header_nav').show();
+    	$('.header_nav_media').hide();
 
 });
