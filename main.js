@@ -97,9 +97,13 @@ $('.footer_content_block li:first-child').on('click', function() {
 	if ($(this).siblings('li').is(':hidden')) {
 		$(this).siblings('li').show();
 		$(this).css('border-bottom', 'none');
+		$(this).find('i.fa-angle-down').hide();
+		$(this).find('i.fa-angle-up').show();
 	} else {
 		$(this).siblings('li').hide();
 		$(this).css('border-bottom', '1px solid #00000024');
+		$(this).find('i.fa-angle-down').show();
+		$(this).find('i.fa-angle-up').hide();
 	}
 
 	
