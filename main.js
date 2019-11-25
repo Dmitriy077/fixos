@@ -14,6 +14,56 @@ $(function() {
 	});
 
 
+
+// Слайдер карточка
+
+	$('.card_slider').slick({
+		// autoplay: true,
+  		// autoplaySpeed: 3000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: true,
+		appendArrows:'.card_slider_arrow',
+		prevArrow:'<div class="card_slider_arrow_prev"><img src="../img/main/left.svg" alt=""></div>',
+		nextArrow:'<div class="card_slider_arrow_next"><img src="../img/main/right.svg" alt=""></div>',
+	});
+
+// Слайдер сохожих товаров карточка
+
+$('.similar_slider').slick({
+		// autoplay: true,
+  		// autoplaySpeed: 3000,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true,
+		adaptiveWidth: true,
+		variableWidth: true,
+		appendArrows:'.similar_arrow',
+		prevArrow:'<div class="similar_arrow_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+		nextArrow:'<div class="similar_arrow_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+	});
+
+// Слайдер сопутсвующих карточка
+
+
+	$('.related_slider').slick({
+		// autoplay: true,
+  		// autoplaySpeed: 3000,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true,
+		adaptiveWidth: true,
+		variableWidth: true,
+		appendArrows:'.related_arrow',
+		prevArrow:'<div class="related_arrow_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+		nextArrow:'<div class="related_arrow_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+	});
+
+
+
 // Маска для телефона
 
 
@@ -108,5 +158,57 @@ $('.footer_content_block li:first-child').on('click', function() {
 
 	
 
+
+});
+
+
+
+// Медиа Каталог
+
+
+$('.category p').on('click', function() {
+	if ($(this).siblings('.category_material').is(':hidden')) {
+		$(this).siblings('.category_material').css('display', 'flex');
+		$(this).css('border-bottom', 'none');
+		$(this).find('i.fa-angle-down').hide();
+		$(this).find('i.fa-angle-up').show();
+	} else {
+		$(this).siblings('.category_material').hide();
+		$(this).css('border-bottom', '1px solid #00000024');
+		$(this).find('i.fa-angle-down').show();
+		$(this).find('i.fa-angle-up').hide();
+	}
+});
+
+
+
+// Табы карточка
+
+
+$('.description_item > p:nth-child(1)').on('click', function() {
+	$('.description_item_media').hide();
+	$('.description_item_media:nth-child(1)').show();
+	$('.description_item > p').css('border-bottom', 'none')
+	$(this).css('border-bottom', '2px solid #1A1A18');
+});
+$('.description_item > p:nth-child(2)').on('click', function() {
+	$('.description_item_media').hide();
+	$('.description_item_media:nth-child(2)').show();
+	$('.description_item > p').css('border-bottom', 'none')
+	$(this).css('border-bottom', '2px solid #1A1A18');
+
+});
+$('.description_item > p:nth-child(3)').on('click', function() {
+	$('.description_item_media').hide();
+	$('.description_item_media:nth-child(3)').show();
+	$('.description_item > p').css('border-bottom', 'none')
+	$(this).css('border-bottom', '2px solid #1A1A18');
+
+});
+$('.description_item > p:nth-child(4)').on('click', function() {
+	$('.description_item_media').hide();
+	$('.description_item_media:nth-child(4)').show();
+	$('.description_item > p').css('border-bottom', 'none')
+	$(this).css('border-bottom', '2px solid #1A1A18');
 
 });
