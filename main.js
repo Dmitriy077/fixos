@@ -19,10 +19,18 @@ $(function() {
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  arrows: false,
-	  asNavFor: '.smallSlider_slick'
+	  asNavFor: '.smallSlider_slick',
+	  responsive: [
+        {
+          breakpoint: 750,
+          settings: {
+            dots: true
+          }
+        }
+        ]
 	});
 	$('.smallSlider_slick').slick({
-	  slidesToShow: 3,
+	  slidesToShow: 4,
 	  slidesToScroll: 1,
 	  asNavFor: '.bigSlider_slick',
 	  dots: false,
@@ -205,7 +213,21 @@ $('.category p').on('click', function() {
 	}
 });
 
+$('.description_item_media > p').on('click', function() {
 
+	if ($(this).siblings('.description_content').is(':hidden')) {
+		$(this).siblings('.description_content').css('display', 'flex');
+		$(this).css('border-bottom', 'none');
+		$(this).find('i.fa-angle-down').hide();
+		$(this).find('i.fa-angle-up').show();
+	} else {
+		$(this).siblings('.description_content').hide();
+		$(this).css('border-bottom', '1px solid #00000024');
+		$(this).find('i.fa-angle-down').show();
+		$(this).find('i.fa-angle-up').hide();
+	}
+
+});
 
 // Табы карточка
 
