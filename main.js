@@ -13,6 +13,31 @@ $(function() {
 		nextArrow:'<div class="main_slider_arrow_next"><img src="./img/main/right.svg" alt=""></div>',
 	});
 
+// Слайдер Карточки в карточке
+
+	$('.bigSlider_slick').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  asNavFor: '.smallSlider_slick'
+	});
+	$('.smallSlider_slick').slick({
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  asNavFor: '.bigSlider_slick',
+	  dots: false,
+	  arrows: false,
+	  focusOnSelect: true,
+	  vertical: true,
+	  responsive: [
+        {
+          breakpoint: 1500,
+          settings: {
+            vertical: false
+          }
+        }
+        ]
+	});	
 
 
 // Слайдер карточка
@@ -212,3 +237,5 @@ $('.description_item > p:nth-child(4)').on('click', function() {
 	$(this).css('border-bottom', '2px solid #1A1A18');
 
 });
+
+

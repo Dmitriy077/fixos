@@ -16,6 +16,9 @@ a {
     cursor: default;
     opacity: 0.5 !important;
 }*/
+:focus {
+	outline: none;
+}
 input {
     border-radius: 0;
     -webkit-border-radius:0px;
@@ -1399,6 +1402,7 @@ input[type="radio"] {
 	font-size: 18px;
 	line-height: 27px;
 	color: #4F4F4F;	
+	margin-top: 13px;
 }
 .similar .universal_block {
 	height: 721px;
@@ -1406,11 +1410,47 @@ input[type="radio"] {
 .materials_wrap .flex_column {
 	justify-content: space-between;
 }	
-
-
-
-
-
+.smallSlider {
+	width: 90px;
+	height: 90px;
+	border: 2px solid #F0F1F4;
+	box-sizing: border-box;	
+	overflow: hidden;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.smallSlider_wrap {
+	width: 120px;
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+.smallSlider img {
+	width: 100%;
+	height: auto;
+}
+.cardSlider_wrap {
+	display: flex;
+}
+.bigSlider_slick {
+	width: 570px;
+	height: 570px;
+	box-sizing: border-box;	
+	overflow: hidden;
+}
+.bigSlider img {
+	width: 100%;
+	height: auto;
+}
+.bigSlider {
+	border: 2px solid #F0F1F4;	
+	background-color: #C4C4C4;
+}
+.slick-current .smallSlider {
+	border: 2px solid #E30235;	
+}
+.cardSlider_wrap {
+	margin-top: 8px;
+}
 
 
 
@@ -1777,9 +1817,107 @@ input.calculator_slider_content {
 
 
 
+/*Карточка товара*/
 
 
-
+.card_text {
+	font-size: 16px;
+	line-height: 24px;	
+	margin-top: 17px;
+}
+.card_text p {
+	margin-bottom: 9px;
+}
+.change {
+	font-size: 18px;
+	line-height: 27px;	
+}
+.change_quantity {
+	width: 136px;
+	height: 60px;	
+	margin-right: 10px;
+}
+.change_cost {
+	font-size: 18px;
+	line-height: 43px;
+}
+.change_content {
+	margin-top: 17px;
+}
+.change_button {
+	flex-direction: row-reverse;
+	margin-top: 13px;
+}
+.change_button input {
+	width: 282px;
+	padding-left: 102px;
+}
+.change_button p {
+	text-align: left;
+	width: 236px;
+	margin-left: 0;
+	margin-right: auto;
+	margin-top: 8px;
+}
+.description_item > p {
+	font-size: 18px;
+	line-height: 27px;
+	padding: 13px 20px 13px 19px;	
+}
+.desription_wrap h1 {
+	font-size: 22px;
+	line-height: 25px;	
+}
+.description_content {
+	margin-top: 24px;
+}
+.small_circle {
+	margin-right: 20px;
+}
+.description {
+	margin-bottom: 18px;
+}
+.card_slider_wrap {
+	margin-top: 20px;
+}
+.card_slider_img {
+	height: 436px;
+}
+.similar_wrap {
+	margin-top: 63px;
+}
+.related, .similar {
+	margin-top: 19px;
+}
+.similar .universal_block {
+	height: 622px;
+}
+.materials_caption {
+	font-size: 18px;
+	line-height: 27px;	
+}
+.materials_text {
+	font-size: 16px;
+	line-height: 24px;	
+}
+.materials_block {
+	width: 306px;
+}
+.bigSlider_slick {
+	width: 360px;
+	height: 360px;
+}
+.smallSlider {
+	width: 83px;
+	height: 83px;
+}
+.cardSlider_wrap {
+	flex-direction: column-reverse;
+}
+.smallSlider_wrap {
+	width: 360px;
+	margin-top: 11px;
+}
 
 
 
@@ -1924,7 +2062,10 @@ input.calculator_slider_content {
 	margin-right: 0;
 	margin-top: 27px;
 }
-
+.materials_wrap .caption h1,
+.main_catalog_wrap .caption h1 {
+	margin: 0 auto;
+}
 
 /*Каталог*/
 
@@ -1939,6 +2080,31 @@ input.calculator_slider_content {
 .category_material li {
 	margin-bottom: 12px;
 }
+
+
+/*Карточка*/
+
+.materials_wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.materials_block {
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.description_item > p {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
 
