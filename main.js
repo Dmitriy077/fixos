@@ -265,13 +265,13 @@ $('.description_item > p:nth-child(4)').on('click', function() {
 
 $('.news_category .fa-angle-down').on('click', function() {
 	$(this).closest('.news_category').css('height', 'auto');
-	$(this).closest('.news_category').siblings('.article_vector').css('bottom', '38px');
+	$(this).closest('.news_article').addClass('article_hover');
 	$(this).siblings('.fa-angle-up').show();
 	$(this).hide();
 });
 $('.news_category .fa-angle-up').on('click', function() {
 	$(this).closest('.news_category').css('height', '33px');
-	$(this).closest('.news_category').siblings('.article_vector').css('bottom', '18px');
+	$(this).closest('.news_article').removeClass('article_hover');
 	$(this).siblings('.fa-angle-down').show();
 	$(this).hide();
 });
